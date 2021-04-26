@@ -10,10 +10,11 @@ phrase_clean <- function(x) gsub("[\xA0]", "", x)
 space_clean <- function(x) gsub("  ", " ", x)
 
 # function: apply a function to ALL character columns
-char_fun <- function(x,y) # x = dataframe, y = function to apply
+char_fun <- function(x,y){ # x = dataframe, y = function to apply
   setDT(x)
   cols_to_be_rectified <- names(x)[vapply(x, is.character, logical(1))]
   x[,c(cols_to_be_rectified) := lapply(.SD, y), .SDcols = cols_to_be_rectified]
+}
 
 # function: get everything from INSIDE any parenthesis
 inparens <- function(x)gsub("(?<=\\()[^()]*(?=\\))(*SKIP)(*F)|.", "", x, perl=T)
@@ -26,6 +27,7 @@ combine <- function(x,y) # x and y are the dataframes to be combined
   rbindlist(list(x, y), fill = TRUE)
 
 # get a dataframe of duplicates in a single column
-duplicated <- function(x,y) # x is the dataframe to look for duplicates, y is the column to check
+duplicated <- function(x,y){ # x is the dataframe to look for duplicates, y is the column to check
   dupe <- x[,c('y')] # list data in column to check duplicates in
   review_dups <- x[duplicated(dupe) | duplicated(dupe, fromLast=TRUE),] # create duplicates data frame
+  }

@@ -14,6 +14,7 @@ left <- function (string,char) {
 }
 
 # text to columns
-text_to_columns <- function(dataframe, column, separator, new_col_name_prefix) # x is the name of the column to be split
+text_to_columns <- function(dataframe, column, separator, new_col_name_prefix) { # x is the name of the column to be split
   colno <- max(lengths(strsplit(dataframe$column, 'separator'))) # get max number of terms for any value in the column to be split
   setDT(dataframe)[, paste0("new_col_name_prefix", 1:colno) := tstrsplit(column, "separator")] # parse out terms into separate columns
+}
