@@ -1,0 +1,27 @@
+{
+    "id": "2314F326",
+    "path": "~/GitHub/r-codesnippets/useful_basic.r",
+    "project_path": "useful_basic.r",
+    "type": "r_source",
+    "hash": "3450583193",
+    "contents": "",
+    "dirty": false,
+    "created": 1619456634911.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "30,102",
+        "scrollLine": "21"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1619458677,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1619458677210,
+    "read_only": false,
+    "read_only_alternatives": []
+}
