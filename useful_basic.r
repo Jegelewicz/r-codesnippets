@@ -19,8 +19,10 @@ char_fun <- function(x,y){ # x = dataframe, y = function to apply
 # function: get everything from INSIDE any parenthesis
 inparens <- function(x)gsub("(?<=\\()[^()]*(?=\\))(*SKIP)(*F)|.", "", x, perl=T)
 
-# function: get everything from OUTSIDE any parentesis
-outparens <- function(x)gsub("\\([^()]*\\)", "", x)
+# function: get everything from OUTSIDE any parenthesis
+outparens <- function(x){
+  trimws(gsub("\\([^()]*\\)", "", x))
+}
 
 # combine data frames that do not have the same column headers and keep all columns
 combine <- function(x,y) # x and y are the dataframes to be combined
