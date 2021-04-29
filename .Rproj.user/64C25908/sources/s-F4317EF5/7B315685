@@ -1,27 +1,27 @@
 {
-    "id": "2314F326",
-    "path": "~/GitHub/r-codesnippets/useful_basic.r",
-    "project_path": "useful_basic.r",
+    "id": "7B315685",
+    "path": "~/GitHub/r-codesnippets/levenshtein_distance.r",
+    "project_path": "levenshtein_distance.r",
     "type": "r_source",
-    "hash": "3080852723",
+    "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1619456634911.0,
+    "created": 1619456224140.0,
     "source_on_save": false,
-    "relative_order": 3,
+    "relative_order": 1,
     "properties": {
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "16,1",
-        "scrollLine": "7"
+        "cursorPosition": "6,0",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1619465243,
+    "lastKnownWriteTime": 1619465036,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1619465243318,
+    "last_content_update": 1619465036567,
     "read_only": false,
     "read_only_alternatives": []
 }
